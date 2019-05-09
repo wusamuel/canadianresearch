@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Launchaco</title>
+    <meta charSet="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description" content="">
+    <meta property="og:image" content="">
+    <link rel="shortcut icon" href="https://www.launchaco.com/static/favicon.ico" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Spectral" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://www.launchaco.com/static/AllTemplates.min.css">
+
+    <style>
+      .launchaco-promo {
+        position: fixed;
+        bottom: 20px;
+        left: 20px;
+        cursor: pointer;
+        width: 0;
+        height: 0;
+        z-index: 999999;
+      }
+
+      .launchaco-promo__active {
+        width: initial;
+        height: initial;
+      }
+
+      .launchaco-promo-speechbubble {
+        font-family: -apple-system, BlinkMacSystemFont, Roboto, "Open Sans", "Helvetica Neue", sans-serif;
+        position: absolute;
+        left: 50px;
+        top: -11px;
+        padding: 9px;
+        color: white;
+        border-radius: 3px;
+        background: linear-gradient(#227ef7, #1290fc);
+        font-size: 14px;
+        font-weight: 600;
+        width: 93px;
+        box-sizing: border-box;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity .15s ease-in-out;
+      }
+
+      .launchaco-promo__active:hover .launchaco-promo-speechbubble {
+        opacity: 1;
+      }
+
+      .launchaco-promo svg {
+        transition: all .3s ease-in-out;
+        opacity: 0;
+      }
+
+      .launchaco-promo__active svg {
+        opacity: 1;
+      }
+
+      .launchaco-promo-speechbubble:before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        transform: rotate(45deg);
+        left: -4px;
+        bottom: 10px;
+        border-radius: 3px;
+        background: #1290fc;
+        z-index: 2;
+        position: absolute
+      }
+
+      .launchaco-promo__active .launchaco-promo-speechbubble__animate {
+        animation: popinpopup 3s linear forwards 0.1s;
+      }
+
+      @keyframes popinpopup {
+        0% {
+          opacity: 0;
+          transform: translate3d(0, 3px, 0)
+        }
+
+        7%,
+        93% {
+          opacity: 1;
+          transform: translate3d(0, 0, 0)
+        }
+
+        100% {
+          opacity: 0;
+          transform: translate3d(0, -4px, 0)
+        }
+      }
+
+      .launchaco-promo-animate:hover {
+        opacity: 1 !important;
+      }
+    </style>
+
+
+    <style>
+      .custom-color-785e724c-a9fd-02da-85b9-b52f555b0559 {
+        background-color: #006633
+      }
+
+      .custom-color-785e724c-a9fd-02da-85b9-b52f555b0559 .primary-color {
+        color: #FFFFFF
+      }
+
+      .custom-color-785e724c-a9fd-02da-85b9-b52f555b0559 .secondary-color {
+        color: #D7F9FF
+      }
+
+      .custom-color-785e724c-a9fd-02da-85b9-b52f555b0559 .accent-bg {
+        background-color: #f48e00
+      }
+
+      .custom-color-785e724c-a9fd-02da-85b9-b52f555b0559 .secondary-bg {
+        background-color: #2898FB
+      }
+
+      .custom-color-785e724c-a9fd-02da-85b9-b52f555b0559 .svg-fill {
+        fill: #FFFFFF
+      }
+
+      .custom-color-55fcb334-1f86-623a-f404-6649a6bfeb15 {
+        background-color: #FFFFFF
+      }
+
+      .custom-color-55fcb334-1f86-623a-f404-6649a6bfeb15 .primary-color {
+        color: #000000
+      }
+
+      .custom-color-55fcb334-1f86-623a-f404-6649a6bfeb15 .secondary-color {
+        color: #000000
+      }
+
+      .custom-color-55fcb334-1f86-623a-f404-6649a6bfeb15 .accent-bg {
+        background-color: #f48e00
+      }
+
+      .custom-color-55fcb334-1f86-623a-f404-6649a6bfeb15 .secondary-bg {
+        background-color: #2898FB
+      }
+
+      .custom-color-55fcb334-1f86-623a-f404-6649a6bfeb15 .svg-fill {
+        fill: #006633
+      }
+    </style>
+  </head>
+
+  <body class="font-elegant">
+    <div class="custom-color-785e724c-a9fd-02da-85b9-b52f555b0559">
+      <!---->
+      <header class="header">
+        <div class="container-lrg">
+          <div class="flex col-12 spread"><a href="/" class="logo launchaco-builder-hoverable logo__white"><img src="https://cdn.launchaco.com/images/96df1f64-ce04-4cde-9c23-ab70adfad6b4.png" alt="Canadian ResearchCompany Logo"></a> <a href="#main-menu" id="menu" class="menu-toggle"><b class="nav-link mr0 secondary-color">☰</b></a>
+            <nav id="main-menu" role="navigation" class="main-menu"><a href="#" id="main-menu-close" class="menu-close"><span class="bold">✕</span></a> <a href="/How it works" class="nav-link secondary-color">How it works</a><a href="/About Us" class="nav-link secondary-color">About Us</a> <a href="mailto:canadianresearch@twg.ca" class="nav-link secondary-color">Contact</a></nav>
+          </div>
+        </div>
+      </header>
+      <section class="section">
+        <div class="container-lrg flex">
+          <div class="flex flex-column col-6 center-vertical mobile-text-center mb40">
+            <h1 class="heading primary-color launchaco-builder-hoverable">How It Works</h1>
+            <h2 class="subheading secondary-color mt20 launchaco-builder-hoverable">Canadian Research has focused on the academic, and scientific research community since 2004, by collecting and posting top research positions from across Canada, and then promoting them in other online directories.</h2>
+            <div class="mt40"><a href="http://canadianresearch@twg.ca" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable mobile-text-center accent-bg button__white"> <span> Contact Us Today </span></a></div>
+          </div>
+          <div class="col-6 flex center-horizontal center-vertical">
+            <div class="launchaco-builder-hoverable">
+              <div class=""><img src="https://cdn.launchaco.com/images/9f40ea38-c514-44b4-a053-096f9334ef62.png" alt="Screenshot of small App" class="custom-img"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <section id="pricing-1" class="section custom-color-55fcb334-1f86-623a-f404-6649a6bfeb15" sitemeta="[object Object]" activepage="How it works">
+      <div class="container mb75 text-center">
+        <div class="col-12">
+          <h4 class="heading primary-color launchaco-builder-hoverable">We keep it simple.</h4>
+          <p class="paragraph secondary-color launchaco-builder-hoverable">Pricing that meets your needs. </p>
+        </div>
+      </div>
+      <div class="container-lrg">
+        <div class="col-12">
+          <div class="card flex mobile-flex-wrap">
+            <div class="col-4 pad30 flex flex-column spread launchaco-builder-hoverable">
+              <div class="mb20">
+                <h4 class="bold primary-color">Unlimited</h4> <b class="heading primary-color">$1000</b> <span class="paragraph secondary-color">Monthly</span>
+                <ul class="mt20">
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Make unlimited postings</span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Custom institution profiles</span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Engagement reports to help you understand your postings. </span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Priority customer support</span></li>
+                </ul>
+              </div> <a href="http://canadianresearch@twg.ca" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable button__full mobile-text-center accent-bg button__white"> <span> SUBSCRIBE </span></a>
+            </div>
+            <div class="col-4 pad30 flex flex-column spread launchaco-builder-hoverable">
+              <div class="mb20">
+                <h4 class="bold primary-color">One position</h4> <b class="heading primary-color">$550</b> <span class="paragraph secondary-color"></span>
+                <ul class="mt20">
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Make one posting on the platform, no commitments required. </span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">All posts are available for one year.</span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Easily transition to monthly plan. </span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Customer support access.</span></li>
+                </ul>
+              </div> <a href="http://canadianresearch@twg.ca" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable button__full mobile-text-center accent-bg button__white"> <span> POST NOW </span></a>
+            </div>
+            <div class="col-4 pad30 flex flex-column spread launchaco-builder-hoverable">
+              <div class="mb20">
+                <h4 class="bold primary-color"></h4> <b class="heading primary-color">Custom</b> <span class="paragraph secondary-color"> </span>
+                <ul class="mt20">
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Let our HR and research experts craft a custom recruitment solution. </span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Support for special immigration, grant, and business solutions. </span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Priority customer support. </span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Custom institution profiles.</span></li>
+                  <li class="flex mb20"><svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" class="svg-fill noshrink mr20">
+                      <g transform="translate(4.000000, 5.000000)">
+                        <path d="M5.24961475,8.39956394 L2.16512063,5.35475362 C1.74038521,4.93548271 1.05017933,4.9352057 0.624646383,5.35526395 C0.199019838,5.77541456 0.198881924,6.45614266 0.624129379,6.8759191 L4.35212111,10.555948 C4.38658274,10.6034965 4.42544251,10.6488955 4.46870038,10.6915969 C4.70907746,10.9288814 5.03375662,11.0320952 5.3475228,11.0013023 C5.59592563,10.9812599 5.83876209,10.8774981 6.02880771,10.6898975 C6.06831079,10.6509027 6.10414872,10.6096632 6.13632157,10.5665961 L13.9850992,2.81879759 C14.4107939,2.39857976 14.410861,1.71746456 13.985328,1.29740632 C13.5597015,0.8772557 12.8697673,0.877449143 12.444108,1.29763217 L5.24961475,8.39956394 Z"></path>
+                      </g>
+                    </svg> <span class="span secondary-color">Custom engagement reports and analysis. </span></li>
+                </ul>
+              </div> <a href="http://canadianresearch@twg.ca" target="_blank" class="button mobile-text-center mt10 launchaco-builder-hoverable button__full mobile-text-center accent-bg button__white"> <span> BOOK A FREE CONSULT </span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="featuredin-2" class="section green-white" sitemeta="[object Object]" activepage="How it works">
+      <div class="container text-center mb50">
+        <div class="col-12">
+          <h4 class="heading primary-color launchaco-builder-hoverable">Industry trusted since 2004.</h4>
+          <p class="subheading secondary-color mt20 launchaco-builder-hoverable">We've worked with the best of the best in Canadian Academic Research. </p>
+        </div>
+      </div>
+      <div class="container-lrg">
+        <div class="flex center-horizontal wrap center-vertical">
+          <div class="col-3 mobile-col-6 mt20"><a href="https://www.camh.ca/" target="_blank"><img src="https://cdn.launchaco.com/images/9774b94e-7eeb-4f79-acb6-f6fd2a448d2e.png" class="press-logo launchaco-builder-hoverable"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><a href="https://www.viu.ca/" target="_blank"><img src="https://cdn.launchaco.com/images/68a41e61-362b-4584-92d8-8bbec949f9e1.png" class="press-logo launchaco-builder-hoverable"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><a href="https://www2.gov.bc.ca/gov/content/home" target="_blank"><img src="https://cdn.launchaco.com/images/bc9a7051-c3bb-40e3-9ee4-f97cddc2ea95.png" class="press-logo launchaco-builder-hoverable"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><a href="http://www.waypointcentre.ca/research_academics/WRI" target="_blank"><img src="https://cdn.launchaco.com/images/105c81c3-7b0f-4b3d-a82b-8cf613407fef.png" class="press-logo launchaco-builder-hoverable"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><a href="https://cusointernational.org" target="_blank"><img src="https://cdn.launchaco.com/images/59af0285-d87d-4f7d-a4b4-85a1a3bbad05.png" class="press-logo launchaco-builder-hoverable"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><a href="https://www.ccra-acrc.ca/" target="_blank"><img src="https://cdn.launchaco.com/images/19aab8d3-957b-404e-bed7-26a048ff42a6.png" class="press-logo launchaco-builder-hoverable"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><a href="https://policywise.com/" target="_blank"><img src="https://cdn.launchaco.com/images/5153a172-b3ef-4746-ace6-bf9f0be3025c.png" class="press-logo launchaco-builder-hoverable"></a></div>
+          <div class="col-3 mobile-col-6 mt20"><a href="www.mah.gov.on.ca/" target="_blank"><img src="https://cdn.launchaco.com/images/d326c023-7d08-49c5-a8d8-9a15c365ece3.png" class="press-logo launchaco-builder-hoverable"></a></div>
+        </div>
+      </div>
+    </section>
+
+    <a id="visual-dreamer" class="launchaco-promo" target="_blank" href="https://www.launchaco.com/">
+      <svg width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <linearGradient x1="9.394%" y1="57.704%" x2="105.69%" y2="27.607%" id="a">
+            <stop stop-color="#007FFF" offset="0%" />
+            <stop stop-color="#1290FC" offset="100%" />
+          </linearGradient>
+          <linearGradient x1="50%" y1="0%" x2="50%" y2="137.557%" id="b">
+            <stop stop-color="#FF9386" offset="0%" />
+            <stop stop-color="#FF5F86" offset="100%" />
+          </linearGradient>
+          <linearGradient x1="30.817%" y1="-31.6%" x2="63.808%" y2="151.297%" id="c">
+            <stop stop-color="#D7EDFF" offset="0%" />
+            <stop stop-color="#FFF" stop-opacity="0" offset="100%" />
+          </linearGradient>
+        </defs>
+        <g fill="none">
+          <circle fill="url(#a)" cx="19.832" cy="19.832" r="19.832" />
+          <path d="M26.616.325l4.308 12.587-4.669-.315L26.218.388c0-.105.091-.19.204-.191.088 0 .166.051.194.128z" fill="url(#b)" transform="rotate(45 28.571 6.555)" />
+          <path d="M32.031 35.658c-6.164 2.721-12.745-4.33-11.992-10.011 2.617.782 4.626.997 7.904 2.01 2.34.769 4.152.479 5.386-1.13 1.234-1.607 1.316-3.502 0-5.158-4.826-5.49 0 0-10.516-12.264l2.923-2.95C.117 4.123 5.302 32.333 6.903 35.095c4.01 3.54 14.11 8.709 25.128.563z" fill="#FFF" />
+          <path d="M9.782 19.176l-.034-.016c0 5.76 4.425 21.794 22.185 16.378-6.148 2.716-12.71-4.29-12.006-9.97a7.394 7.394 0 0 1-2.73.519c-3.922 0-7.135-3.047-7.415-6.911z" fill="url(#c)" />
+          <ellipse fill="#354158" cx="22.185" cy="14.958" rx="2.017" ry="1.849" />
+          <ellipse fill="#354158" cx="22.185" cy="14.958" rx="2.017" ry="1.849" />
+        </g>
+      </svg>
+      <div class="launchaco-promo-speechbubble launchaco-promo-speechbubble__animate">Built With Launchaco</div>
+      <div class="launchaco-promo-speechbubble">Built With Launchaco</div>
+    </a>
+  </body>
+
+  <script>
+    window.onscroll = function()
+    {
+      showAd()
+    }
+
+    function showAd()
+    {
+      var scrollBarPosition = window.pageYOffset | document.body.scrollTop;
+
+      // At specifiv position do what you want
+      if (scrollBarPosition > 300)
+      {
+        document.getElementById("visual-dreamer").className = "launchaco-promo launchaco-promo__active";
+        window.onscroll = function() {};
+      }
+    }
+  </script>
+
+</html>
